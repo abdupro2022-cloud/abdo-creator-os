@@ -1,0 +1,14 @@
+{
+  "name": "abdo-creator-os",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "npm --prefix packages/web run dev",
+    "dev:api": "npm --prefix packages/api run dev",
+    "build": "npm --prefix packages/web run build && npm --prefix packages/api run build",
+    "test": "npm --prefix packages/api run test"
+  }
+}
